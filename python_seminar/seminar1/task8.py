@@ -5,3 +5,12 @@
 
 # 3 2 4 -> yes
 # 3 2 1 -> no
+
+horizontal = int(input("Ведите количество долек по горизонтали: "))
+vertical = int(input("Ведите количество долек по вертикали: "))
+slice = int(input("Ведите количество долек которые необходимо отломать: "))
+
+if (slice < horizontal * vertical) and (slice % horizontal == 0 or slice % vertical == 0):
+    print("Yes")
+else:
+    print("No")
