@@ -16,14 +16,17 @@ from random import randint
 
 coins = int(input('enter the number of coins: '))
 tails = 0
+heads = 0
 
 for i in range(coins):
-    coin = randint(0, 1)
-    print(f'{coin}', end=' ')
+    coin = int(input())
     if (coin == 0):
         tails += 1
-print(f'need to flip over {tails}', end=' ')
-if tails > 1:
-    print('coins')
+    else:
+        heads += 1
+
+print(f'need to flip over ', end=' ')
+if tails > heads:
+    print(tails)
 else:
-    print('coin')
+    print(heads)

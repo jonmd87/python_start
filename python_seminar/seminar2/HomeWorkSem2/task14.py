@@ -14,7 +14,7 @@ two = 2
 result = two ** degree
 number = int(input("enter number: "))
 
-while result  < number:
+while result  <= number:
     print(f'{result}', end= ' ')
     degree += 1
     result = two ** degree
