@@ -26,5 +26,5 @@ for i in range(0, len(list) - 1):
     temp += list[i - 1] + list[i] + list[i + 1]
     if temp > berries:
         berries = temp
-        
+
 print(berries)
